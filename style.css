@@ -1,0 +1,482 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar{
+    width: 7px;
+    background-color: #fff;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #aaa;
+}
+
+.sectionThree::-webkit-scrollbar{
+    width: 7px;
+    background-color: #fff;
+}
+.sectionThree::-webkit-scrollbar-thumb{
+    background-color: #aaa;
+    border-radius: 10px;
+}
+body, .sectionOne{
+    background-color: #ddd;
+}
+.contact_res{
+    display: none;
+}
+/*--------------- Header -------------------*/
+
+.header{
+    width: 100%;
+    position: fixed;
+    transition: all ease-out;
+    z-index: 100;
+    background-color: #1f1e1f;
+    padding: 7px 0;
+}
+.header nav ul{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+}
+.header nav ul li{
+    margin: 5px 20px;
+}
+.header nav ul li a{
+    color: #fff;
+    font-size: 20px;
+}
+.active{
+    border-bottom: 3px solid #fff;
+}
+.header nav ul li a:hover{
+    color: #eee;
+
+}
+
+/*--------------- fin header -------------------*/
+
+/*--------------- section 1 -------------------*/
+
+.sectionOne{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+.sectionOne > img{
+    margin: auto;
+    z-index: 1;
+    width: 250px;
+    height: 200px;
+}
+.sectionOne > h1, .sectionOne > h2,.sectionOne > h4{
+    position: absolute;
+    font-size: 35px;
+    left: 38%;
+    z-index: 50;
+    letter-spacing: 3px;
+}
+.sectionOne > h1{
+    font-size: 40px;
+    top: calc(45% + 20%);
+    letter-spacing: 6px;
+}
+.sectionOne > h2{
+    font-size: 45px;
+    top: calc(45% - 18%);
+}
+.sectionOne > h4{
+    top: calc(45% + 30%);
+    font-size: 20px;
+}
+
+/*--------------- fin section 1 -------------------*/
+
+/*--------------- section 2 -------------------*/
+
+.sectionTwo{
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+}
+.sectionTwo_1 h2{
+    font-size: 65px;
+}
+.sectionTwo_1,.sectionTwo_2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.sectionTwo_1 img,.sectionTwo_2 img{
+    width: 250px;
+    height: 200px;
+}
+.sectionTwo_2{
+    margin-top: 70px;
+    justify-content: space-evenly;
+}
+.sectionTwo_2 img{
+    width: 200;
+    height: 280px;
+}
+.sectionTwo_2 p{
+    width: 40%;
+    text-align: justify;
+    font-size: 17px;
+    margin-top: 70px;
+}
+/*--------------- fin section 2 -------------------*/
+
+/*--------------- section 3 -------------------*/
+.titleProject{
+    font-size: 46px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.sectionThree{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+    height: 500px;
+    background-color: #ccc;
+    justify-content: space-between;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 150px;
+    overflow: hidden;
+}
+.carrusel{
+    display: flex;
+    width: 100%;
+    transition: .3s transform ease-in;
+}
+.card{
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.card img{
+    width: 350px;
+    height: 300px;
+    margin-bottom: 30px;
+}
+.card .parrafo{
+    letter-spacing: 3px;
+    text-align: center;
+    width: 60%;
+}
+.arrow{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1000;
+}
+.right{
+    right: 0;
+    margin-right: 10px;
+}
+.left{
+    margin-left: 10px;
+}
+.card .parrafo > a{
+    color: #fff;
+    padding: 10px;
+    background-color: #1f1e1f;
+    border-radius: 15px;
+    transition: .3s color ease, .3s background-color ease;
+}
+.card .parrafo > a:hover{
+    color: #1f1e1f;
+    padding: 10px;
+    background-color: #aaa;
+    border-radius: 15px;
+}
+
+/*--------------- fin section 3 -------------------*/
+
+/*--------------- section 4 -------------------*/
+.contact{
+    text-align: center;
+    font-size: 46px;
+}
+.sectionFour{
+    height: 74vh;
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+.sectionFour .sectionFour_1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.sectionFour .sectionFour_1 > h2{
+    font-size: 46px;
+    margin: 10px auto;
+}
+.sectionFour .sectionFour_1 > h4{
+    font-size: 26px;
+    margin: auto;
+}
+.sectionFour .sectionFour_1 > p{
+    margin: auto;
+    text-align: justify;
+    font-size: 20px;
+    width: 50%;
+}
+.sectionFour_2{
+    display: flex;
+    margin: auto;
+}
+.sectionFour .sectionFour_2 > img{
+    width: 400px;
+    height: 85%;
+}
+
+/*--------------- fin section 4 -------------------*/
+
+/*---------------- Responsive ----------------------*/
+
+@media screen and (max-width:800px){
+    /*--------------- Header -------------------*/
+
+    .header{
+        width: 100%;
+        position: fixed;
+        transition: all ease-out;
+        z-index: 100;
+        left: 0;
+        background-color: #1f1e1f;
+    }
+    .header nav ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+    .header nav ul li{
+        margin: 5px 10px;
+    }
+    .header nav ul li a{
+        color: #fff;
+        font-size: 17   px;
+    }
+    .header nav ul li a:hover{
+        color: #eee;
+
+    }
+
+/*--------------- fin header -------------------*/
+
+/*--------------- section 1 -------------------*/
+
+        .sectionOne{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+        }
+        .sectionOne > img{
+            margin: auto;
+            z-index: 1;
+            width: 200px;
+            height: 170px;
+        }
+        .sectionOne > h1, .sectionOne > h2,.sectionOne > h4{
+            position: absolute;
+            font-size: 35px;
+            z-index: 50;
+            left: 30%;
+        }
+        .sectionOne > h1{
+            font-size: 27px;
+            top: calc(50% + 12%);
+            letter-spacing: 10px;
+        }
+        .sectionOne > h2{
+            top: calc(50% - 18%);
+            font-size: 32px;
+            letter-spacing: 8px;
+        }
+        .sectionOne > h4{
+            top: calc(50% + 26%);
+            font-size: 15px;
+        }
+
+/*--------------- fin section 1 -------------------*/
+/*--------------- section 2 -------------------*/
+
+    .sectionTwo{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin-bottom: 400px;
+    }
+    .sectionTwo_1 h2{
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+    .sectionTwo_1,.sectionTwo_2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sectionTwo_1 img,.sectionTwo_2 img{
+        width: 250px;
+        height: 150px;
+    }
+    .sectionTwo_2{
+        margin-top: 0;
+        margin-right: 50px;
+    }
+    .sectionTwo_2 img{
+        display: none;
+    }
+    .sectionTwo_2 p{
+        font-size: 19px;
+        margin-left: 50px;
+    }
+/*--------------- fin section 2 -------------------*/
+/*--------------- section 3 -------------------*/
+    .title{
+        font-size: 35px;
+    }
+    .sectionThree{
+        margin-top: 50px;
+        width: 80%;
+    }
+    .sectionThree .carrusel .card img{
+        width: 250px;
+        height: 250px;
+    }
+    .arrow{
+        width: 40px;
+        height: 40px;
+    }
+    .cards{
+        width: 250px;
+        height: 100%;
+        position: relative;
+        margin-bottom: 35px;
+        border-bottom: 3px solid #222;
+    }
+    .card > p{
+        font-size: 16px;
+    }
+
+/*--------------- fin section 3 -------------------*/
+/*--------------- section 4 -------------------*/
+    .contact{
+        text-align: center;
+        font-size: 45px;
+        margin-bottom: 100px;
+    }
+    .contact_res{
+        font-size: 10px;
+        opacity: 0;
+        display: block;
+    }
+    .sectionFour{
+        height: 74vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionFour .sectionFour_1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .sectionFour .sectionFour_1 > h2{
+        font-size: 35px;
+        margin-top: 150px;
+    }
+    .sectionFour .sectionFour_1 > h4{
+        font-size: 26px;
+    }
+    .sectionFour .sectionFour_1 > p{
+        font-size: 20px;
+    }
+    .sectionFour_2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sectionFour .sectionFour_2 > img{
+        margin-top: 15px;
+        width: 70%;
+        height: 100%;
+    }
+
+/*--------------- fin section 4 -------------------*/
+}
+@media screen and (max-width:500px){
+    .sectionTwo{
+        height: 150vh;
+        
+    }
+    .sectionOne > h2{
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+    .sectionOne > h1{
+        font-size: 1.8rem;
+        letter-spacing: 5px;
+    }
+    .sectionFour{
+        margin-top: 200px;
+    }
+    .sectionThree{
+        width: 80%;
+        height: 450px;
+    }
+    .sectionThree .carrusel .card img{
+        width: 150px;
+        height: 150px;
+    }
+    .arrow{
+        width: 30px;
+        height: 30px;
+    }
+}
+@media screen and (max-width:320px){
+    .header nav ul li a{
+        font-size: 15px;
+    }
+    .sectionOne > h1,.sectionOne > h2, .sectionOne > h4{
+        left: 20%;
+    }
+    .sectionOne > h2{
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+    .sectionOne > h1{
+        font-size: 1.8rem;
+        letter-spacing: 5px;
+    }
+    .sectionTwo{
+        height: 150vh;
+        width: 100%;
+    }
+    .sectionTwo_2{
+        width: 100%;
+    }
+    .sectionTwo_2 img{
+        width: 100px;
+        height: 200px;
+    }
+    .sectionTwo_2 p{
+        margin: 15px 0;
+    }
+    .sectionFour{
+        margin-top: 200px;
+    }
+    .sectionThree{
+        width: 80%;
+        height: 500px;
+    }
+}

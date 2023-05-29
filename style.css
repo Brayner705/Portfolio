@@ -317,6 +317,12 @@ body, .sectionOne{
         height: 100vh;
         margin-bottom: 400px;
     }
+    .sectionTwo_2 p{
+        width: 90%;
+        text-align: justify;
+        font-size: 17px;
+        margin-top: 70px;
+    }
     .sectionTwo_1 h2{
         font-size: 35px;
         margin-bottom: 15px;
@@ -399,7 +405,10 @@ body, .sectionOne{
         font-size: 26px;
     }
     .sectionFour .sectionFour_1 > p{
+        margin: auto;
+        text-align: justify;
         font-size: 20px;
+        width: 70%;
     }
     .sectionFour_2{
         display: flex;
@@ -408,17 +417,13 @@ body, .sectionOne{
     }
     .sectionFour .sectionFour_2 > img{
         margin-top: 15px;
-        width: 70%;
+        width: 90%;
         height: 100%;
     }
 
 /*--------------- fin section 4 -------------------*/
 }
 @media screen and (max-width:500px){
-    .sectionTwo{
-        height: 150vh;
-        
-    }
     .sectionOne > h2{
         font-size: 30px;
         letter-spacing: 5px;
